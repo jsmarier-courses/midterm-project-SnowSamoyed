@@ -1,15 +1,21 @@
-**Date**<br>
-**Course Code & Course Name**<br>
-**Student's First Name & Last Name**<br>
+**2024/10/30**<br>
+**Mpad 2003 Data Storytelling**<br>
+**Maxine Zeng**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
 # Midterm Project: Exploratory Data Analysis (EDA)
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one.
+<!-- Use one hashtag symbol (`#`) to create a level 1 heading like this one. -->
 
 ## Foreword
 
-For this assignment, you must extract data from a dataset provided by the instructor. You must then clean and analyze the data, create exploratory charts/visualizations, and find a potential story idea. Your assignment must clearly detail your process. You are expected to write about 1500-2000 words, and to include several screen captures showing the different steps you went through. Your assignment must be written with the Markdown format and submitted on GitHub Classroom.
+This data exploratory analysis focus on learning objectives of data storytelling:
+
+`1.` Import, cleaning data from scratch
+`2.` Learning basics of github 
+`3.` Learning how to write markdown files
+
+<!-- For this assignment, you must extract data from a dataset provided by the instructor. You must then clean and analyze the data, create exploratory charts/visualizations, and find a potential story idea. Your assignment must clearly detail your process. You are expected to write about 1500-2000 words, and to include several screen captures showing the different steps you went through. Your assignment must be written with the Markdown format and submitted on GitHub Classroom.
 
 I have been assigning different versions of this project to my digital journalism and data storytelling students for a few years now. Its structure was inspired by the main sections/chapters of [*The Data Journalism Handbook*](https://datajournalism.com/read/handbook/one/). This version was further inspired by the [Key Capabilities in Data Science](https://extendedlearning.ubc.ca/programs/key-capabilities-data-science) program offered by the University of British Columbia (UBC).
 
@@ -20,15 +26,32 @@ I have been assigning different versions of this project to my digital journalis
 
 Did you notice how to create a hyperlink? In Markdown, we put the clickable text between square brackets and the actual URL between parentheses.
 
-And to create an unordered list, we simply put a star (`*`) before each item.
+And to create an unordered list, we simply put a star (`*`) before each item. -->
 
 ## 1. Introduction
 
-Insert text here.
+This exploratory data analysis will be analyzing the City of Ottawa dataset of citizen requests.
+The City of Ottawa receives requests from four sources: 311 contact centre, client service centre, 311 email and web-based self- service portal. Which includes content such as Bylaw Services, Citizen Services, City Facilities and Garbage and Recycling, etc. They collected these requests and documented each one of them down into a dataset. The dataset is updating daily.
+This analysis will including sections of getting data, understanding data, potential story, conclusion and references list.
+
+* [Link to the original dataset from City of Ottawa (updating daily):](https://open.ottawa.ca/documents/65fe42e2502d442b8a774fd3d954cac5/about)
+
+* [Link to the csv version I used.](https://raw.githubusercontent.com/jsmarier/course-datasets/refs/heads/main/ottawa-311-service-requests-august-2024.csv)
+
 
 ## 2. Getting Data
 
-Use two hashtag symbols (`##`) to create a level 2 heading like this one.
+First, I download the data from the github link assigned with a shortcut Ctrl + S, place it under my github folder. Then open google sheet, select tab "file", then "import", upload the file from saved location. Here is a screenshot of the imported file.
+
+![](import-Screenshot-after-import-dataset.png)<br>
+*Figure 1: The imported dataset in Google Sheets.*
+
+*[Link to my dataset imported in Google Sheets](https://docs.google.com/spreadsheets/d/1mhltDAwbRGIJIhvvtqf18TT1oe3h3seDmpCdTad6e7E/edit?usp=sharing)
+
+From A to K, there are 11 columns as the category of the data. There are 28539 row of data for each individual cases. Apparently, the original dataset is quite overwhelming for analyzing. The data looks to be clean and well structured, but it can still benefit from some modification for a clear readability. 
+
+
+<!-- Use two hashtag symbols (`##`) to create a level 2 heading like this one.
 
 To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
 
@@ -44,7 +67,7 @@ To include a screen capture, use the sample code below. Your images should be sa
 ``` r
 =IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
 ```
-This also shows how to create an ordered list. Simply put `1.` before each item.
+This also shows how to create an ordered list. Simply put `1.` before each item. -->
 
 ## 3. Understanding Data
 

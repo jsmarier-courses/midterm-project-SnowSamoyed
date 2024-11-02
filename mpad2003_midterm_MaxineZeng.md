@@ -41,14 +41,35 @@ This analysis will including sections of getting data, understanding data, poten
 
 ## 2. Getting Data
 
-First, I download the data from the github link assigned with a shortcut Ctrl + S, place it under my github folder. Then open google sheet, select tab "file", then "import", upload the file from saved location. Here is a screenshot of the imported file.
+First, I download the data from the github link assigned with a shortcut Ctrl + S, place it under my github folder. Then open google sheet, select tab "file", then "import", upload the file from saved location.
 
-![](import-Screenshot-after-import-dataset.png)<br>
+
+![](Screenshot-after-import-dataset.png)<br>
 *Figure 1: The imported dataset in Google Sheets.*
 
-*[Link to my dataset imported in Google Sheets](https://docs.google.com/spreadsheets/d/1mhltDAwbRGIJIhvvtqf18TT1oe3h3seDmpCdTad6e7E/edit?usp=sharing)
+* [Link to my dataset imported in Google Sheets](https://docs.google.com/spreadsheets/d/1mhltDAwbRGIJIhvvtqf18TT1oe3h3seDmpCdTad6e7E/edit?usp=sharing)
 
-From A to K, there are 11 columns as the category of the data. There are 28539 row of data for each individual cases. Apparently, the original dataset is quite overwhelming for analyzing. The data looks to be clean and well structured, but it can still benefit from some modification for a clear readability. 
+From A to K, there are 11 columns and 28539 row of data for each individual cases. Apparently, the original dataset is quite overwhelming for analyzing. The data looks to be clean and well structured, but it can still benefit from some modification for a clear readability. Also noticed that "\N" is being used to label missing value.
+
+`1. ` Column A "Service Request ID | Numéro de demande" contains numerical ordinal ID numbers, which are all unique to its own case.
+
+`2. ` Column B "Status | État" contains categorical data, which only has "Resolved", "Cancelled" and "Active" as input.
+
+`3. ` Column C "Type | Type" is categorical data defining the request under a big category. It has 11 categories in total.
+
+`4. ` Column D "Description | Description" Contains 554 sub category data under each big category.
+
+`5. ` Column E "Opened Date | Date d'ouverture" and Column F "Closed Date | Date de fermeture" are ordinal date data, there will always be a specific opened data on column e, but Column F can be mark as "/N" because it is not resolved.
+
+`6.` Column G "Address | Adresse" includes text information of address. A lot of them were marked as "\N".
+
+`7.` Column H "Latitude | Latitude" and I "Longitude | Longitude" are discrete data indicating the coordinate of the address. Can be marked as "\N" with address
+
+`8. ` Column J "Ward | Quartier" is 24 categorical data of the ID of wards in Ottawa, but some of them were marked as "\N" as the 25th category. The ID of wards makes the data cleaner and easier to use compare to data record with ward names, which may have different versions.
+
+`9. ` Column K "Channel | Voie de service" is categorical data of how the case being requested, there are 6 category in total.
+
+After understanding the data, I wonder if there is a correlation between wards and type categories of issues.
 
 
 <!-- Use two hashtag symbols (`##`) to create a level 2 heading like this one.
@@ -73,7 +94,23 @@ This also shows how to create an ordered list. Simply put `1.` before each item.
 
 ### 3.1. VIMO Analysis
 
-Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
+This VIMO Analysis is focusing on the Type and Ward Columns:
+
+`1. `Valid
+    All data are valid under each category except for the missing ones marked as "\N". They are identify as Micro data, which are summarized into a big category.
+
+`2. `Invalid
+    No data is Invalid.
+    
+`3. `Missing
+    There are 1549 rows of data is being marked as "\N" under column of wards. 
+    There are 2 rows of data being marked as "\N" under column of types.
+
+`4.`Outlier
+    I noticed that for Water and the Environment there are 834 row of data being marked as missing, that is the highest among other types. This problem could be due to location ambiguity, which some issues location were not clearly defined within ward boundaries or have cross ward boundaries, leading to reporting confusions. 
+
+
+<!-- Use three hashtag symbols (`###`) to create a level 3 heading like this one. Please follow this template when it comes to level 1 and level 2 headings. However, you can use level 3 headings as you see fit.
 
 Insert text here.
 
@@ -81,7 +118,7 @@ Support your claims by citing relevant sources. Please follow [APA guidelines fo
 
 **For example:**
 
-As Cairo (2016) argues, a data visualization should be truthful...
+As Cairo (2016) argues, a data visualization should be truthful... -->
 
 ### 3.2. Cleaning Data
 

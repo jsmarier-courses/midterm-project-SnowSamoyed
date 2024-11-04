@@ -44,7 +44,7 @@ This analysis will including sections of getting data, understanding data, poten
 First, I download the data from the github link assigned with a shortcut Ctrl + S, place it under my github folder. Then open google sheet, select tab "file", then "import", upload the file from saved location.
 
 
-![](Screenshot after import dataset.png)<br>
+![](Screenshot-after-import-dataset.png)<br>
 *Figure 1: The imported dataset in Google Sheets.*
 
 * [Link to my dataset imported in Google Sheets](https://docs.google.com/spreadsheets/d/1mhltDAwbRGIJIhvvtqf18TT1oe3h3seDmpCdTad6e7E/edit?usp=sharing)
@@ -146,7 +146,7 @@ A pivot table was created to analysis the relationship between Wards and Type. W
 
 In the pivot table, I also calculated the mean of all Types using `=DIVIDE(AA2, 24)`, and the median with `=MEDIAN((B2:Z2))`. The average of Requests between 24 wards is approximately 1190 per ward. The highest one is ward 12 Rideau-Vanier with 1628 request and Ward 20 Osgoode with 648 requests, the median is 1168 requests from ward 18 Cumberland. 
 
-![](Pivot table.png)<br>
+![](Pivot-table.png)<br>
 *Figure 2: This pivot table shows the relationship between Ward and Type*
 
 Based on the pivot table,  I created a few simple visualizations in Google sheets. In the graph visualizing type of requests per Ward on figure 3, the Garbage and Cleaning category in orange is the most common value. It can also be marked as significant data since it went over 30% of the data.
@@ -155,12 +155,12 @@ Based on the pivot table,  I created a few simple visualizations in Google sheet
 
 In the second visualization in figure 4, you can also spot the outlier that was found earlier, which is from Water and Environment that are on the column for requests's ward being marked as missing. 
 
-![](Type of requests per Ward of Ottawa in percentage.png)<br>
+![](Type-of-Requests-per-Ward-of-Ottawa-in-Percentage.png)<br>
 *Figure 3: Percentage of Types*
 
 I further dived into the missing value in percentage, Citizen Service has 25.3% ward information missing and Water and Environment has 20.1% percentage missing. These two are the only ones that is significantly higher than others.
 
-![](Percentage of Missing Value in Wards for Types.png)<br>
+![](Percentage-of-Missing-Value-in-Wards-for-Types.png)<br>
 *Figure 4: Percentage of Types*
 
 The Licenses | Permit rows are most rare two requests among all the categorical, which is not surprising, but Health | Safety row being the second least seems to be odd. 
@@ -169,10 +169,10 @@ Covariations happened between the number of the types and the total number of re
 
 * [R for Data Science](https://r4ds.had.co.nz/exploratory-data-analysis.html)
 
-![](Type of requests per Ward of Ottawa.png)<br>
-*Figure 5: This graph visualized the type of request per district*
+![](Type-of-requests-per-Ward-of-Ottawa.png)<br>
+*Figure 5: This graph visualized the type of requests per district*
 
-![](Ottawa's Ward Requests per Types.png)<br>
+![](Ottawa's-Ward-Requests-per-Types.png)<br>
 *Figure 6: This graph visualized each district's request number in different types*
 
 <!-- **This section should include a screen capture of your pivot table, like so:**
@@ -214,7 +214,7 @@ City of Ottawa. (n.d.). 2024 service requests. Open Ottawa. * [https://open.otta
 
 TouhidulIslam, M. (2021, February 25). Levels of measurement (nominal, ordinal, interval, ratio) in statistics. Data Science Central.  * [Levels of Measurement (Nominal, Ordinal, Interval, Ratio) in Statistics](https://www.datasciencecentral.com/levels-of-measurement-nominal-ordinal-interval-ratio-in/)
 
-Interpretation of vimo table. (2015, March 27). * [https://umanitoba.ca/manitoba-centre-for-health-policy/sites/manitoba-centre-for-health-policy/files/2021-11/vimo-table-interpretation.pdf ](https://umanitoba.ca/manitoba-centre-for-health-policy/sites/manitoba-centre-for-health-policy/files/2021-11/vimo-table-interpretation.pdf)
+Hong, S. P. (2015, March 27). Interpretation of vimo table. University of Manitoba. * [https://umanitoba.ca/manitoba-centre-for-health-policy/sites/manitoba-centre-for-health-policy/files/2021-11/vimo-table-interpretation.pdf ](https://umanitoba.ca/manitoba-centre-for-health-policy/sites/manitoba-centre-for-health-policy/files/2021-11/vimo-table-interpretation.pdf)
 
 Wickham , H., & Grolemund, G. (2017). R for data science. 7 Exploratory Data Analysis.  * [https://r4ds.had.co.nz/exploratory-data-analysis.html](https://r4ds.had.co.nz/exploratory-data-analysis.html)
 

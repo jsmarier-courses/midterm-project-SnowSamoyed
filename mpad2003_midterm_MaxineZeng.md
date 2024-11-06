@@ -9,9 +9,9 @@
 
 This data exploratory analysis focus on learning objectives of data storytelling:
 
-`1.` Import, cleaning data from scratch
-`2.` Learning basics of github 
-`3.` Learning how to write markdown files
+`1.` Import, cleaning data from scratch.
+`2.` Learning basics of github operations.
+`3.` Learning how to write markdown files.
 
 <!-- * [GitHub's *Basic writing and formatting syntax* page](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
